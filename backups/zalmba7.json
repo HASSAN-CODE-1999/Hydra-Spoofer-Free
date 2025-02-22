@@ -1,0 +1,59 @@
+{
+  "BIOS": {
+    "SMBIOSBIOSVersion": "V1.52",
+    "Manufacturer": "INSYDE Corp.",
+    "Name": "V1.52",
+    "SerialNumber": "NHQGCEM004217022F77600"
+  },
+  "BaseBoard": {
+    "Manufacturer": "ADL",
+    "Product": "Metis_ADP",
+    "SerialNumber": "NBQGC110012280CBD57600",
+    "Name": "Base Board"
+  },
+  "Processor": {
+    "DeviceID": "CPU0",
+    "Name": "12th Gen Intel(R) Core(TM) i5-1240P",
+    "ProcessorId": "BFEBFBFF000906A3",
+    "SerialNumber": "To Be Filled By O.E.M.",
+    "PartNumber": "To Be Filled By O.E.M."
+  },
+  "ComputerSystem": {
+    "Name": "Aspire A715-51G",
+    "Vendor": "Acer",
+    "Version": "V1.52",
+    "UUID": "3E902812-6EE9-FE46-AE4D-C01850AB3A2C",
+    "IdentifyingNumber": "NHQGCEM004217022F77600"
+  },
+  "SystemEnclosure": {
+    "Manufacturer": "Chassis Manufacturer",
+    "LockPresent": false,
+    "SerialNumber": "Chassis Serial Number",
+    "SMBIOSAssetTag": "No Asset Tag",
+    "SecurityStatus": 3
+  },
+  "DiskDrives": {
+    "Disk_0": {
+      "DeviceID": "\\\\.\\PHYSICALDRIVE0",
+      "SerialNumber": "0000_0000_0000_0001_00A0_7521_3323_FD54.",
+      "Model": "NVMe Micron_2450_MTFDKBA512TFK",
+      "Caption": "NVMe Micron_2450_MTFDKBA512TFK"
+    },
+    "Disk_1": {
+      "DeviceID": "\\\\.\\PHYSICALDRIVE1",
+      "SerialNumber": "0000_0001_2211_1970_CAF2_5B02_C000_0526.",
+      "Model": "NVMe Lexar SSD NM620 512GB",
+      "Caption": "NVMe Lexar SSD NM620 512GB"
+    }
+  },
+  "Memory": {
+    "Memory_0": {
+      "Tag": "Physical Memory 0",
+      "SerialNumber": "133EA86F"
+    },
+    "Memory_1": {
+      "Tag": "Physical Memory 1",
+      "SerialNumber": "3615D0A2"
+    }
+  }
+}
