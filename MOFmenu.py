@@ -592,8 +592,6 @@ class HydraSpoofer(ctk.CTk):
             self.update_status("🎭 MODIFYING SYSTEM IDENTIFIERS...", "info")
             sw, status = self.spoofer.install_service(config=self.custom_config)
             if sw:
-                self.update_access_serial()
-
                 for step in status:
                     self.update_status(step, "info")
                     time.sleep(0.5)  # Realistic timing
@@ -811,7 +809,6 @@ class HydraSpoofer(ctk.CTk):
             else:
                 messagebox.showinfo("Done", "Serials config restored successfully.")
                 self.spoofer.set_spoof_status(True)
-                self.update_access_serial()
                 self.spoofing_in_progress = False
                 self.update_status("🔄 IMPORTED SERIALS...", "success")
 
@@ -847,7 +844,6 @@ class HydraSpoofer(ctk.CTk):
             time.sleep(2)
             time.sleep(2)
             if self.spoofer.uninstall_service():
-                self.update_access_serial()
                 self.regen_btn.configure(state="disabled")
                 self.update_status("✅ ORIGINAL IDENTIFIERS RESTORED", "success")
                 messagebox.showinfo(
