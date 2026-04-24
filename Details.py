@@ -72,3 +72,17 @@ def get_hwid(real=False):
 
 def kill():
     os.kill(os.getpid(), signal.SIGTERM)
+
+def debug_print(*args):
+    if sys.argv[0].endswith(".py"):
+        print(*args)
+
+def get_public_ip():
+    try:
+        import requests
+        response = requests.get('https://api.ipify.org?format=text', timeout=5)
+        if response.status_code == 200:
+            return response.text.strip()
+    except Exception as e:
+        debug_print("Error fetching public IP:", e)
+    return None
